@@ -1,0 +1,99 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 2000;
+  background: none;   
+  border: none;       
+}
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 220px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 1.5rem 1rem;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.05);
+  transition: left 0.3s ease;
+  z-index: 1500;
+}
+
+
+.sidebar.active {
+  left: 0;
+}
+
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.8rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: #0066cc;
+}
+
+
+main {
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: #444;
+  text-align: center;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
